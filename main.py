@@ -8,7 +8,7 @@ import sys
 class MainApp(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Camera App with Face Info")
+        self.setWindowTitle("Real-Time  License Plate Detection Using YOLOv12")
         self.setGeometry(100, 100, 1000, 600)
 
         # Widgets
