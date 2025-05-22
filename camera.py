@@ -134,9 +134,9 @@ class CameraWidget(QLabel):
         out.write(final_frame)
         frame_idx += 1
 
-        # select sharpest_plate, display_text to show in info panel 
+        # เลิือก sharpest_plate, display_text ไปโชว์ใน info panel 
         if self.on_frame_processed:
-            self.on_frame_processed(frame, display_text)
+            self.on_frame_processed(sharpest_plate, display_text)
 
         rgb_image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         h, w, ch = rgb_image.shape
